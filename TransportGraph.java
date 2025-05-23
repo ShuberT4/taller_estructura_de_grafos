@@ -73,7 +73,8 @@ public class TransportGraph {
             weights.put(city, Integer.MAX_VALUE);
         }
         weights.put(start, 0);
-        priorityQueue.add(new AbstractMap.SimpleEntry<>(start, 0));
+        priorityQueue.add(new AbstractMap.SimpleEntry<>
+        (start, 0));
 
         while (!priorityQueue.isEmpty()) {
             City currentCity = priorityQueue.poll().getKey();
@@ -117,7 +118,7 @@ public class TransportGraph {
         }
         // No se encontró ruta
         String typeString = weightType == WeightType.DISTANCE ? "Distancia" : "Costo de Peaje";
-        return new Pathesult(null, 0, typeString);
+        return new Pathesult(null, 0, typeString); 
     }
 
     public Pathesult findShortestPath(String startCityName, String endCityName) {

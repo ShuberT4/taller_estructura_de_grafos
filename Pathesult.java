@@ -30,10 +30,12 @@ public class Pathesult {
         if (!isFound()) {
             return "No se encontró una ruta.";
         }
-        String pathString = path.stream().map(City::getName).collect(Collectors.joining(" -> "));
+        String pathString = path.stream()
+        .map(City::getName).collect(Collectors
+        .joining(" -> "));
         return "Ruta: " + pathString + 
                 "\n" + type + " Total: " + totalValue +
-            (type.equals("Distancia") ? totalValue + " km" : " $");
+            (type.equals("Distancia") ? " km" : " $");
     }
 }
 

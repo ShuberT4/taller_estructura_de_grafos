@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestDebug",
+            "request": "launch",
+            "mainClass": "debufg_test.TestDebug",
+            "projectName": "taller_estructura_de_grafos_dae7df83"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
