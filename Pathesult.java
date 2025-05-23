@@ -33,7 +33,7 @@ public class Pathesult {
         String pathString = path.stream().map(City::getName).collect(Collectors.joining(" -> "));
         return "Ruta: " + pathString + 
                 "\n" + type + " Total: " + totalValue +
-               (type.equals("Distancia") ? totalValue + " km" : " $");
+            (type.equals("Distancia") ? totalValue + " km" : " $");
     }
 }
 

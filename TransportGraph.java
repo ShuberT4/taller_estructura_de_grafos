@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 import java.util.Set;
 
 public class TransportGraph {
-   
+
     private Map<City, List<Route>> adjacencyList;
     private Map<String, City> citiesMap; // Para buscar ciudades por nombre fácilmente
 
@@ -60,7 +60,7 @@ public class TransportGraph {
             return new Pathesult(null, 0, ""); // Ciudades no válidas
         }
         if (start.equals(end)) {
-             return new Pathesult(Collections.singletonList(start), 0, weightType == WeightType.DISTANCE ? "Distancia" : "Costo de Peaje");
+            return new Pathesult(Collections.singletonList(start), 0, weightType == WeightType.DISTANCE ? "Distancia" : "Costo de Peaje");
         }
 
         Map<City, Integer> weights = new HashMap<>(); // Almacena el peso mínimo desde el inicio hasta la ciudad
@@ -137,7 +137,7 @@ public class TransportGraph {
     public Pathesult findCheapestPath(String startCityName, String endCityName) {
         City start = getCity(startCityName);
         City end = getCity(endCityName);
-         if (start == null) {
+        if (start == null) {
             System.out.println("Ciudad de origen '" + startCityName + "' no encontrada.");
             return new Pathesult(null, 0, "Costo de Peaje");
         }

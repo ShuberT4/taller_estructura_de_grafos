@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SimulacionRedEstructuraDeDatos {
 
-  public static void main(String[] args) {
+public static void main(String[] args) {
         TransportGraph graph = new TransportGraph();
 
         // 1. Creación del Grafo - Definición de Ciudades
@@ -66,7 +66,7 @@ public class SimulacionRedEstructuraDeDatos {
             }
 
 
-            // Búsqueda de Ruta más Corta
+            // Búsqueda de rata más Corta
             System.out.println("\n--- Buscando Ruta Más Corta ---");
             Pathesult shortestPath = graph.findShortestPath(startCityName, endCityName);
             if (shortestPath.isFound()) {
