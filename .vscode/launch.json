@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BFS",
+            "request": "launch",
+            "mainClass": "debufg_test.BFS",
+            "projectName": "taller_estructura_de_grafos_dae7df83"
+        },
+        {
+            "type": "java",
+            "name": "DFSGraph",
+            "request": "launch",
+            "mainClass": "debufg_test.DFSGraph",
+            "projectName": "taller_estructura_de_grafos_dae7df83"
+        },
+        {
+            "type": "java",
             "name": "TestDebug",
             "request": "launch",
             "mainClass": "debufg_test.TestDebug",
